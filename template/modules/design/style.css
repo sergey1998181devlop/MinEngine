@@ -1,0 +1,107 @@
+.design.container {
+	padding: 60px 60px 0;
+}
+.design__title {
+	font-size: 38px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.design-content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.design-content-information {
+	height: 100%;
+	overflow-y: auto;
+}
+.design-content-information-element {
+	margin-bottom: 36px;
+}
+.design-content-information-element__title {
+	font-size: 28px;
+	color: #d4a589;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 6px;
+}
+.design-content-information-element__subtitle {
+	font-size: 18px;
+	color: #fff;
+}
+.design-content-picture {
+	width: 42%;
+	flex-shrink: 0;
+	position: relative;
+}
+.design-content-picture img {
+	position: absolute;
+	border: 3px solid #d4a589;
+	-webkit-box-shadow: 8px 10px 0px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 8px 10px 0px 0px rgba(0,0,0,0.5);
+	box-shadow: 8px 10px 0px 0px rgba(0,0,0,0.5);
+}
+.design-content-picture img:nth-child(1) {
+	width: 125%;
+	right: 40px;
+	top: 0;
+}
+.design-content-picture img:nth-child(2) {
+	width: 77%;
+	right: 70px;
+	top: 250px;
+}
+
+@media (max-width: 1280px) {
+	.design.container {
+		padding: 60px 0 0;
+	}
+	.design-content-picture img:nth-child(2) {
+		top: 200px;
+	}
+}
+@media (max-width: 999px) {
+	.design.container {
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-top: 0;
+	}
+	.design-content {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.design-content-picture {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.design.container {
+		padding: 0 24px;
+	}
+	.design__title {
+		font-size: 32px;
+		margin-bottom: 12px;
+	}
+	.design-content-information-element__title {
+		font-size: 21px;
+		margin-bottom: 4px;
+	}
+	.design-content-information-element__subtitle {
+		font-size: 16px;
+	}
+	.design-content-information-element {
+		margin-bottom: 24px;
+	}
+	.design-content-information-element:last-child {
+		margin-bottom: 0;
+	}
+}

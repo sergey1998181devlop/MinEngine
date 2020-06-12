@@ -1,0 +1,127 @@
+.section[data-section="mansard"] {
+	background: -webkit-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), 
+	url(/template/modules/mansard/img/img_1.jpg);
+	background: -o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), 
+	url(/template/modules/mansard/img/img_1.jpg);
+	background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), 
+	url(/template/modules/mansard/img/img_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mansard.container {
+    padding: 20px 0 0;
+}
+.mansard__title {
+	font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.mansard-content {
+	padding: 20px 26px;
+    background: rgba(0,0,0,.6);
+	width: 50%;
+}
+.mansard-content-picture {
+	width: 42%;
+	margin-right: 40px;
+}
+.mansard-content-picture img {
+	width: 100%;
+	-webkit-box-shadow: 8px 10px 0px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 8px 10px 0px 0px rgba(0,0,0,0.5);
+    box-shadow: 8px 10px 0px 0px rgba(0,0,0,0.5);
+}
+.mansard-content-information__title {
+	font-size: 24px;
+	color: #d4a589;
+	margin-bottom: 30px;
+}
+.mansard-content-information__item {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.mansard-content-information__item:last-child {
+	margin-bottom: 0;
+}
+.mansard-mobile-pic {
+	display: none;
+}
+
+@media (max-width: 1280px) {
+	.mansard.container {
+		padding: 60px 0 80px;
+	}
+}
+@media (max-width: 999px) {
+	.mansard.container {
+		padding-top: 50%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		margin-bottom: 40px;
+	}
+	.mansard-content {
+		padding-left: 60px;
+		padding-right: 60px;
+		width: 100%;
+	}
+	.mansard-mobile-pic {
+		display: block;
+		width: 100%;
+	}
+	.mansard-mobile-pic img {
+		width: 100%;
+	}
+	.mansard-content-picture {
+		display: none;
+	}
+	.mansard-content-information {
+		width: 100%;
+	}
+}
+@media (max-width: 767px) {
+	.mansard.container {
+		padding: 0;
+	}
+	.mansard-content {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.mansard__title {
+		font-size: 32px;
+		margin-bottom: 12px;
+	}
+	.mansard-content-information__title {
+		font-size: 21px;
+		margin-bottom: 12px;
+	}
+	.mansard-content-information__item {
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+	.mansard-mobile-pic {
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-height: 880px) {
+	.section[data-section="mansard"] {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	.mansard.container {
+		width: 100%;
+	}
+}

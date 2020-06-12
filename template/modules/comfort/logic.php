@@ -1,0 +1,4 @@
+<?
+$result = [];
+require('template.php');
+?>

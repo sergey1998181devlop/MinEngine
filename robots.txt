@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin.php
+Disallow: /system
+Disallow: /template
+Disallow: /.git

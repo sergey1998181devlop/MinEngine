@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "Сonstan";
+	src: url("../fonts/constan.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Сonstan";
+	src: url("../fonts/constanb.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: bold; 
+}
+@font-face {
+	font-family: "Сonstan";
+	src: url("../fonts/constani.ttf") format("truetype");
+	font-style: italic; 
+	font-weight: normal; 
+}
+@font-face {
+	font-family: "Сonstan";
+	src: url("../fonts/constanz.ttf") format("truetype");
+	font-style: italic; 
+	font-weight: bold; 
+}
